@@ -58,7 +58,7 @@ X/Twitter is a **different** binary (`twitter-mcp`, later). Do not scrape.
 - [x] Coverage should stay high — same bar as google-mcp / gantry watch
 - [x] Copy scaffolding from google-mcp and rename: `Makefile`, `.golangci.yml` (drop Google-only exclusions), `.goreleaser.yaml`, `.github/workflows/ci.yml` + `release.yml`, `scripts/pre-commit`, `scripts/coverage-badge.sh`
 - [x] Makefile: no `git init`. `VERSION` file is fine; `git describe` fallback is ok for later
-- [x] Skip `cmd/release` unless you want it after the repo exists
+- [x] `cmd/release` + `make release` / `make version` (same as google-mcp / gantry)
 - [x] `README.md` — lean: two tools, no auth, gantry `mcp.toml` snippet (`name = "feeds"`), NWS User-Agent, link mcp-naming
 - [x] `AGENTS.md` — short naming reminder + link to this TODO
 - [x] `golangci-lint run ./...` and `go test ./...` green

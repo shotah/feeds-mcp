@@ -1,5 +1,9 @@
 # feeds-mcp
 
+<p align="center">
+  <img src="assets/banner.svg" alt="feeds-mcp — two tools, no auth, stdio" width="100%">
+</p>
+
 RSS / Atom / JSON Feed MCP server (Go)
 
 <p align="center">
@@ -87,6 +91,8 @@ make test
 make lint
 make coverage
 make cli
+make version          # dry-run: current tag → next patch
+make release          # bump VERSION, tag v* + latest, push (BUMP=patch|minor|major)
 ```
 
 Tests use `httptest` only — no live network.
